@@ -1,3 +1,5 @@
+
+//In This Todo Only delete 
 let btn = document.querySelector("button");
 let input = document.querySelector("input");
 let ul = document.querySelector("ul");
@@ -16,7 +18,6 @@ btn.addEventListener("click", function() {
 });
 
 // Using event delegation to handle delete button clicks
-
 ul.addEventListener("click", function(event) {
     if(event.target.nodeName =="BUTTON") {
         let listItem = event.target.parentElement;
@@ -27,17 +28,7 @@ ul.addEventListener("click", function(event) {
 
 
 
-
-
-
-// let delBtns = document.querySelectorAll(".delete");
-// for(delBtn of delBtns) {
-//     delBtn.addEventListener("click", function() {
-//         let par = this.parentElement;
-//         console.log(par);
-//         par.remove();
-//     }); 
-// } 
+//In This Todos checkbox and Delete  work
 
 
 // let btn = document.querySelector("button");
@@ -86,3 +77,4 @@ ul.addEventListener("click", function(event) {
 //         console.log("Deleted");
 //     }
 // });
+
